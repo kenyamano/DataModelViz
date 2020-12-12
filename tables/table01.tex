@@ -1,34 +1,44 @@
 % Table created by stargazer v.5.2.2 by Marek Hlavac, Harvard University. E-mail: hlavac at fas.harvard.edu
-% Date and time: Fri, Dec 11, 2020 - 12:11:32 AM
+% Date and time: Fri, Dec 11, 2020 - 2:55:24 PM
 \begin{table}[!htbp] \centering 
   \caption{} 
   \label{} 
-\begin{tabular}{@{\extracolsep{5pt}}lcc} 
+\begin{tabular}{@{\extracolsep{5pt}}lcccc} 
 \\[-1.8ex]\hline 
 \hline \\[-1.8ex] 
- & \multicolumn{2}{c}{\textit{Dependent variable:}} \\ 
-\cline{2-3} 
-\\[-1.8ex] & \multicolumn{2}{c}{count} \\ 
-\\[-1.8ex] & \textit{zero-inflated} & \textit{negative} \\ 
- & \textit{count data} & \textit{binomial} \\ 
-\\[-1.8ex] & (1) & (2)\\ 
+ & \multicolumn{4}{c}{\textit{Dependent variable:}} \\ 
+\cline{2-5} 
+\\[-1.8ex] & y & \multicolumn{3}{c}{count} \\ 
+\\[-1.8ex] & \textit{OLS} & \textit{Poisson} & \textit{zero-inflated} & \textit{negative} \\ 
+ & \textit{} & \textit{} & \textit{count data} & \textit{binomial} \\ 
+\\[-1.8ex] & (1) & (2) & (3) & (4)\\ 
 \hline \\[-1.8ex] 
- livebait & 1.269 & 1.429 \\ 
-  & (0.469) & (0.429) \\ 
-  & & \\ 
- persons & 0.407 & 0.324 \\ 
-  & (0.071) & (0.059) \\ 
-  & & \\ 
- Constant & $-$1.291 & $-$1.515 \\ 
-  & (0.505) & (0.456) \\ 
-  & & \\ 
+ xlivebait & 3.502$^{*}$ &  &  &  \\ 
+  & (1.979) &  &  &  \\ 
+  & & & & \\ 
+ xpersons & 2.073$^{***}$ &  &  &  \\ 
+  & (0.314) &  &  &  \\ 
+  & & & & \\ 
+ livebait &  & 1.884$^{***}$ & 1.269$^{***}$ & 1.429$^{***}$ \\ 
+  &  & (0.232) & (0.469) & (0.429) \\ 
+  & & & & \\ 
+ persons &  & 0.326$^{***}$ & 0.407$^{***}$ & 0.324$^{***}$ \\ 
+  &  & (0.010) & (0.071) & (0.059) \\ 
+  & & & & \\ 
+ Constant & $-$6.148$^{***}$ & $-$1.970$^{***}$ & $-$1.291$^{**}$ & $-$1.515$^{***}$ \\ 
+  & (2.101) & (0.236) & (0.505) & (0.456) \\ 
+  & & & & \\ 
 \hline \\[-1.8ex] 
-Observations & 250 & 250 \\ 
-Log Likelihood & $-$435.844 & $-$441.705 \\ 
-$\theta$ &  & 0.263  (0.035) \\ 
-Akaike Inf. Crit. &  & 889.410 \\ 
+Observations & 250 & 250 & 250 & 250 \\ 
+R$^{2}$ & 0.157 &  &  &  \\ 
+Adjusted R$^{2}$ & 0.150 &  &  &  \\ 
+Log Likelihood &  & $-$1,121.128 & $-$435.844 & $-$441.705 \\ 
+$\theta$ &  &  &  & 0.263$^{***}$  (0.035) \\ 
+Akaike Inf. Crit. &  & 2,248.256 &  & 889.410 \\ 
+Residual Std. Error & 10.724 (df = 247) &  &  &  \\ 
+F Statistic & 23.046$^{***}$ (df = 2; 247) &  &  &  \\ 
 \hline 
 \hline \\[-1.8ex] 
-\textit{Note:}  & \multicolumn{2}{r}{} \\ 
+\textit{Note:}  & \multicolumn{4}{r}{} \\ 
 \end{tabular} 
 \end{table} 

@@ -31,7 +31,8 @@
 \bibliographystyle{apsr}
 
 \usepackage{ntheorem}  % Hypothsis
-\makeatletter %
+
+\makeatletter 
 \newtheoremstyle{hypotheses}%
   {\item[\hskip\labelsep \theorem@headerfont ##1##2\theorem@separator]}%
   {\item[\hskip\labelsep \theorem@headerfont ##1##2\ (##3)\theorem@separator]}
@@ -42,18 +43,19 @@
 \newtheorem{subhyp}{H}
    \renewcommand\thesubhyp{\thehyp\alph{subhyp}}
 
+% This is the beginning of document
 \begin{document}
 
-
-\title{How to Use Overleaf \thanks{Thank you thank you thank you. All views expressed in this paper are....}}
 %%%%%%%%%%%%%%%%%%%%%%
 %%%%% First Page %%%%%
 %%%%%%%%%%%%%%%%%%%%%%
 
+\title{How to Use Overleaf \thanks{Thank you thank you thank you. All views expressed in this paper are....}}
+
 \author{Ichiro Suzuki\thanks{Seattle Mariners}}
 \author{Rui Hachimura\thanks{Washington Wizards}}
 \affil{University of Washington}
-\date{}
+\date{Dec 12}
 \maketitle
 
 \begin{abstract}
@@ -81,10 +83,15 @@ Overleaf is a collaborative cloud-based \LaTeX editor used for writing, editing 
 \section{Introduction}
 GitHub, Inc. is a subsidiary of Microsoft which provides hosting for software development and version control using Git. It offers the distributed version control and source code management (SCM) functionality of Git, plus its own features. It provides access control and several collaboration features such as bug tracking, feature requests, task management, continuous integration and wikis for every project. Headquartered in California, it has been a subsidiary of Microsoft since 2018\footnote{ Excerpt from \href{https://en.wikipedia.org/wiki/GitHub}{wikipedia}}.  To begin Git and GitHub, go this \href{https://happygitwithr.com/}{LINK}.
 
-
 \section*{Introduction}
 With asterisk, the section title will not be numbered (I prefer this).
 
+\subsection{Introduction of introduction}
+\subsubsection{Introduction of introduction of introduction}
+You can also create subsection and subsubsection
+
+\subsubsection*{Introduction: No number}
+Again, With asterisk, no numbering.
 
 \section*{Literature Review\footnote{ \url{https://en.wikipedia.org/wiki/Ichiro_Suzuki}}}
 Due to an agreement between Japanese baseball and the MLB, Ichiro was not allowed to play in the United States before 2001. His move to the United States was viewed with some interest because he was among the first Japanese position players to play for an MLB team. In the same way that many Japanese teams had considered the 18-year-old Ichiro too small to draft in 1992, many Americans believed he would prove too frail to succeed against Major League pitching or endure the longer 162-game season. Ichiro made an auspicious debut with Seattle, and in the Mariners' eighth game revealed his tremendous throwing arm by gunning down Oakland's Terrence Long, who had tried to advance from first to third on a teammate's single to right field. That play would be dubbed "The Throw" by Japanese media covering Ichiro's progress \citep{KinBa14, Svolik2020WhenIncumbents}.
@@ -99,6 +106,10 @@ With a .350 batting average and 56 stolen bases, Ichiro was the first player to 
 \begin{hyp}
 Eating: As the number of democracies increases, the effect of the level of GDP per capita on appetite diminishes.  
 \end{hyp}
+\begin{subhyp}
+Eating: As the number of democracies increases, the effect of the level of GDP per capita on appetite 
+\end{subhyp}
+
 
 Aided by Major League Baseball's decision to allow All-Star voting in Japan, Ichiro was the first rookie to lead all players in voting for the All-Star Game. That winter, he won the American League Most Valuable Player and the Rookie of the Year awards, becoming only the second player in MLB history (after Fred Lynn) to receive both honors in the same season. Ichiro is also the only player in major league history to have won an MVP, Rookie of the Year, Gold Glove Award, Silver Slugger Award, all while starting in the All-Star Game in the same season.
 
@@ -116,7 +127,17 @@ Also see this link:\\
 \url{https://en.wikibooks.org/wiki/LaTeX/Tables} \\
 
 
-Ichiro made his NPB Pacific League debut in 1992 for the Orix BlueWave at the age of 18, but he spent most of his first two seasons in the farm system (accumulating 156 minor league hits and a .368 batting average[10]) because his then-manager, Shōzō Doi, refused to accept Ichiro's unorthodox swing. The swing was nicknamed 'pendulum' (Furiko Dahō) because of the pendulum-like motion of his leg, which shifts his weight forward as he swings the bat, and goes against conventional hitting theory. In his second career game, he recorded his first ichi-gun (Japan's Nippon Professional Baseball League) hit in the Pacific League against Fukuoka Daiei Hawks pitcher Keiji Kimura. Even though he hit in 1993 a home run against Hideo Nomo, who later won an MLB National League Rookie of the Year Award while a Los Angeles Dodger, Ichiro was nevertheless sent back to the farm system on that very day. In 1994, he benefited from the arrival of a new manager, Akira Ōgi, who played him every day in the second spot of the lineup. He was eventually moved to the leadoff spot, where his immediate productivity dissolved any misgivings about his unconventional swing. He set a Japanese single-season record with 210 hits, the first player ever to top 200 hits in a single season. Five other players have since done so: Matt Murton, Norichika Aoki (twice), Alex Ramírez, Tsuyoshi Nishioka, and Shogo Akiyama's 216 hits in 2015, but those players benefited from 140+ game seasons while Ichiro's 210 hits had come in a 130-game season.
+\begin{table}[]
+    \centering
+    \begin{tabular}{c|c}
+    cc     & dd \\
+         & 
+    \end{tabular}
+    \caption{Caption}
+    \label{tab:my_label}
+\end{table}
+
+\cite{Menaldo2016}  made his NPB Pacific League debut in 1992 for the Orix BlueWave at the age of 18, but he spent most of his first two seasons in the farm system (accumulating 156 minor league hits and a .368 batting average[10]) because his then-manager, Shōzō Doi, refused to accept Ichiro's unorthodox swing. The swing was nicknamed 'pendulum' (Furiko Dahō) because of the pendulum-like motion of his leg, which shifts his weight forward as he swings the bat, and goes against conventional hitting theory\citep{Democracy2013,Menaldo2015}. In his second career game, he recorded his first ichi-gun (Japan's Nippon Professional Baseball League) hit in the Pacific League against Fukuoka Daiei Hawks pitcher Keiji Kimura. Even though he hit in 1993 a home run against Hideo Nomo, who later won an MLB National League Rookie of the Year Award while a Los Angeles Dodger, Ichiro was nevertheless sent back to the farm system on that very day. In 1994, he benefited from the arrival of a new manager, Akira Ōgi, who played him every day in the second spot of the lineup. He was eventually moved to the leadoff spot, where his immediate productivity dissolved any misgivings about his unconventional swing. He set a Japanese single-season record with 210 hits, the first player ever to top 200 hits in a single season. Five other players have since done so: Matt Murton, Norichika Aoki (twice), Alex Ramírez, Tsuyoshi Nishioka, and Shogo Akiyama's 216 hits in 2015, but those players benefited from 140+ game seasons while Ichiro's 210 hits had come in a 130-game season.
 
 \subimport{tables/}{table01.tex}
 
@@ -144,6 +165,7 @@ It was during the 1994 season that he began to use his given name, "Ichiro," ins
 
 In 1995, as Figure~\ref{fig:FloatingPlot} suggests, Ichiro led the Blue Wave to its first Pacific League pennant in 12 years. In addition to his second batting title, he led the league with 80 RBI and 49 stolen bases, while his career-high 25 home runs were third in the league. By this time, the Japanese press had begun calling him the "Hit Manufacturing Machine". The following year, with Ichiro winning his third-straight MVP award, the team defeated the Central League champion, Yomiuri Giants, in the Japan Series. Following the 1996 season, playing in an exhibition series against a visiting team of Major League All-Stars kindled Ichiro's desire to travel to the United States to play in the Major Leagues.
 
+
 In November 1998, Ichiro participated in a seven-game exhibition series between Japanese and American all-stars. Ichiro batted .380 and collected seven stolen bases in the series, winning praise from several of his MLB counterparts, including Sammy Sosa and Jamie Moyer (who would become his teammate with the Mariners).
 
 \begin{figure}[t] % But I like to place on top
@@ -158,6 +180,12 @@ In November 1998, Ichiro participated in a seven-game exhibition series between 
 In 2000, Ichiro was still a year away from being eligible for free agency, but the Blue Wave was no longer among Japan's best teams. Because the team would probably not be able to afford to keep him, and would lose him without compensation in another year, Orix allowed him to negotiate with Major League clubs. Ichiro used the posting system, and the Seattle Mariners won the right to negotiate with him with a bid of approximately $13 million.[12] In November, Ichiro signed a three-year, $14 million contract with the Seattle Mariners. In his nine NPB seasons in Japan, Ichiro had 1,278 hits, a .353 career batting average, and won seven Golden Glove Awards. Ichiro's time in the Japanese baseball leagues matured him as a player and a person, and he often credits it for his success.
 
 \section{Random Useful Resources}
+\LaTeX: Lab material from Data Viz \\
+\url{http://staff.washington.edu/kpleung/vis//slides/lab2_slides.pdf} \\
+stargazer\\
+\url{https://www.jakeruss.com/cheatsheets/stargazer/}\\
+Math\\
+\url{https://en.wikibooks.org/wiki/LaTeX/Mathematics}\\
 Bib \\
 \url{http://merkel.texture.rocks/Latex/natbib.php} \\
 Gary King's bib\\
